@@ -16,51 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="5" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29A-no-a4l">
-                                <rect key="frame" x="16" y="79" width="398" height="56"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uk-4y-NJ4">
-                                <rect key="frame" x="108.66666666666669" y="541.66666666666663" width="213" height="51"/>
-                                <color key="backgroundColor" red="0.1747999787" green="0.25215718149999999" blue="0.39217236640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="213" id="5p1-YR-kVB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Остановить"/>
-                                <connections>
-                                    <action selector="startButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui7-q7-zh5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5K-tc-eLb">
-                                <rect key="frame" x="108.66666666666669" y="622.66666666666663" width="213" height="51"/>
-                                <color key="backgroundColor" red="0.1747999787" green="0.25215718149999999" blue="0.39217236640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="213" id="VrA-yf-P3Z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Поддержать"/>
-                                <connections>
-                                    <action selector="supportButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFV-8K-eye"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="cv7-5D-bgI">
+                                <rect key="frame" x="16" y="264" width="398" height="409.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, adsf asdfasdf asdf asd f" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="29A-no-a4l">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="167.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="167.66666666666666" id="R5U-JG-yiO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2lQ-fN-dYB">
+                                        <rect key="frame" x="70.666666666666686" y="287.66666666666663" width="257" height="122"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uk-4y-NJ4">
+                                                <rect key="frame" x="0.0" y="0.0" width="257" height="51"/>
+                                                <color key="backgroundColor" red="0.1747999787" green="0.25215718149999999" blue="0.39217236640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="257" id="6M0-Fd-7XX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Остановить"/>
+                                                <connections>
+                                                    <action selector="startButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui7-q7-zh5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5K-tc-eLb">
+                                                <rect key="frame" x="0.0" y="71" width="257" height="51"/>
+                                                <color key="backgroundColor" red="0.1747999787" green="0.25215718149999999" blue="0.39217236640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="257" id="QV7-5o-0zC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Поддержать"/>
+                                                <connections>
+                                                    <action selector="supportButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFV-8K-eye"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal" spacing="50"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstItem="29A-no-a4l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0CS-Na-dC7"/>
-                            <constraint firstItem="5Uk-4y-NJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8YG-Ta-UqK"/>
-                            <constraint firstItem="P5K-tc-eLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjP-x3-QAt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P5K-tc-eLb" secondAttribute="bottom" multiplier="4:3" id="o8H-h4-c8U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="29A-no-a4l" secondAttribute="trailing" constant="16" id="pCv-av-wVc"/>
-                            <constraint firstItem="P5K-tc-eLb" firstAttribute="top" secondItem="5Uk-4y-NJ4" secondAttribute="bottom" constant="30" id="qZG-Rl-wbI"/>
-                            <constraint firstItem="29A-no-a4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wc7-5G-dKT"/>
+                            <constraint firstItem="cv7-5D-bgI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hS-1e-e6J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cv7-5D-bgI" secondAttribute="bottom" multiplier="4:3" id="Rws-4P-DXG"/>
+                            <constraint firstItem="cv7-5D-bgI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d3d-yx-t4O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cv7-5D-bgI" secondAttribute="trailing" constant="16" id="hJV-bL-ILX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,7 +87,7 @@
     </scenes>
     <resources>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
